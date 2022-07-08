@@ -5,13 +5,13 @@ class Product {
     protected string $sellerBrand;
     protected int $artId;
     protected int $stockQuantity;
-    protected int $requestedQuantity;
+    protected int $requestedQuantity = 0;
     protected float $priceUnit;
     protected float $sellingPrice;
     protected float $volume;
     protected float $weight;
 
-    public function __construct($prodName, $sellerBrand, $artId,$stockQuantity, $requestedQuantity, $priceUnit, $sellingPrice, $volume, $weight) {
+    public function __construct($prodName, $sellerBrand, $artId,$stockQuantity, $priceUnit, $sellingPrice, $volume, $weight) {
         $this->prodName = $prodName;
         $this->sellerBrand = $sellerBrand;
         $this->artId = $artId;
