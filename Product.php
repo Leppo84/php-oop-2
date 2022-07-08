@@ -6,7 +6,7 @@ class Product {
     protected int $artId;
     protected int $stockQuantity;
     protected int $requestedQuantity;
-    protected string $priceUnit;
+    protected float $priceUnit;
     protected float $sellingPrice;
     protected float $volume;
     protected float $weight;
@@ -23,57 +23,49 @@ class Product {
         $this->weight = $weight;
     }
 
-    public function setProdName($prodName)
-    {
+    public function setProdName($prodName) {
         $this->prodName = $prodName;
         return $this;
     }
 
-    public function setSellerBrand($sellerBrand)
-    {
+    public function setSellerBrand($sellerBrand) {
         $this->sellerBrand = $sellerBrand;
         return $this;
     }
     
-    public function setArtId($artId)
-    {
+    public function setArtId($artId) {
         $this->artId = $artId;
         return $this;
     }
 
-    public function setstockQuantity($stockQuantity)
-    {
+    public function setstockQuantity($stockQuantity) {
         $this->stockQuantity = $stockQuantity;
         return $this;
     }
 
-    public function setrequestedQuantity($requestedQuantity)
-    {
+    public function setrequestedQuantity($requestedQuantity) {
         $this->requestedQuantity = $requestedQuantity;
         return $this;
     }
 
-    public function setpriceUnit($priceUnit)
-    {
+    public function setpriceUnit($priceUnit) {
         $this->priceUnit = $priceUnit;
         return $this;
     }
 
-    public function setsellingPrice($sellingPrice)
-    {
+    public function setsellingPrice($sellingPrice) {
         $this->sellingPrice = $sellingPrice;
         return $this;
     }
 
-    public function setVolume($volume)
-    {
+    public function setVolume($volume) {
         $this->volume = $volume;
         return $this;
     }
 
-    public function setWeight($weight)
-    {
+    public function setWeight($weight) {
         $this->weight = $weight;
         return $this;
     }
+
 }
